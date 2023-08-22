@@ -1,0 +1,19 @@
+Algoritmo Clase2_Actividad2
+
+Describa un algoritmo (pseudocódigo) que ordene ascendentemente tres números dados: a, b, c 
+
+Leer a, b, c
+
+Si a > b Entonces
+    Intercambiar a y b
+Fin Si
+
+Si a > c Entonces
+    Intercambiar a y c
+Fin Si
+
+Si b > c Entonces
+    Intercambiar b y c
+Fin Si
+
+Imprimir a, b, c
