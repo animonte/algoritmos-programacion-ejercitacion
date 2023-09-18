@@ -1,0 +1,77 @@
+program clase6_actividad1
+uses crt
+procedure lectura(num1,num2,num3:integer)
+begin
+	clrt;
+	Write('Escriba aquí un número);
+	ReadLn(num1)
+	Write('Escriba aquí un número);
+	ReadLn(num2)
+	while(num1 = num2) do
+	Begin
+		Write('Los números ingresados no pueden ser iguales, ingrese nuevamente el segundo número)
+		Readln(num2)
+	End;
+	Write('Escriba aquí un número);
+	ReadLn(num3)
+	While(num2 = num3 or num1 = num3) do
+	Begin
+	Write('Los números ingresados no pueden ser iguales, ingrese nuevamente el tercer número)
+		Readln(num3)
+	End;	
+End;
+
+procedure ordenar(numero1,numero2,numero3:integer, var menor, intermedio, mayor:integer)
+Begin
+	If numero1 < numero2 Entonces
+		if numero 2 < numero3 Entonces
+			menor := numero1;
+			intermedio := numero2;
+			mayor:= numero3;
+		end;
+	end;
+	If numero2 < numero1 Entonces
+		if numero1 < numero3 entonces
+			menor:= numero2;
+			intermedio := numero1;
+			mayor:= numero3;
+		End;
+	End
+	If numero3 < numero2 Entonces
+		if numero2 < numero1 Entonces
+			menor:= numero3;
+			intermedio := numero2;
+			mayor:= numero1;
+		End;
+	End;
+	If numero2 < numero3 Entonces
+		if numero3 < numero1 entonces
+			menor:= numero2;
+			intermedio := numero3;
+			mayor:= numero1;
+		end;
+	End;
+	If numero1 < numero3 entonces
+		if numero3 < numero2 entonces
+			menor:= numero1;
+			intermedio:= numero3;
+			mayor:= numero2;
+		end;
+	End;
+	If numero3 < numero1 entonces
+		if numero1 < numero2 entonces
+			menor:= numero3;
+			intermedio:= numero1;
+			mayor:= numero2;
+		end;
+	End;
+	Write('Los numeros ordenados son: ', menor, intermedio, mayor);
+End;
+	
+	
+Begin
+	lectura(n1,n2,n3);
+	ordenar(n1,n2,n3);
+End.
+	
+			
