@@ -1,0 +1,47 @@
+{
+Crear un programa en Pascal que almacene en un vector  5 números enteros. 
+Se pide:
+A) Escribir los elementos del primero al último.
+B) Escribir los elementos del último al primero.
+C) Mostrar la suma de todos sus elementos.
+D) Mostrar la suma de sus elementos pares e impares.
+E) Mostrar la suma de sus elementos en las posiciones pares e impares.
+}
+
+
+program Clase8_ejercicio1;
+
+uses crt;
+
+type 
+	lista_leida = array of integer;
+
+var 
+	i : integer;
+	numeros : lista_leida;
+
+BEGIN
+SetLength(numeros, 5);
+
+for i:=1 to 5 do
+	begin
+	writeln('Ingrese aquí un numero: ');
+	readln(numeros[i]);
+	end;
+	
+writeln('Ha ingresado los siguientes números: ');
+for i := 1 to 5 do
+  begin
+    writeln(numeros[i]);
+  end;
+
+writeln('Los números en orden inverso son: ');
+for i := 5 downto 1 do
+  begin
+    writeln(numeros[i]);
+  end;  
+
+readkey;
+
+END.
+
